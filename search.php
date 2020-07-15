@@ -1,0 +1,32 @@
+<?php
+session_start();
+$email=$_POST['emailid'];
+$pass=$_POST['password'];
+$na;
+$con=mysqli_connect('127.0.0.1','root');
+mysqli_select_db($con,'registration');
+$q="SELECT * FROM `information`";
+$n=0;
+$run=mysqli_query($con,$q);
+if($run==TRUE){
+	while($data=mysqli_fetch_assoc($run)){
+		if($email==$data['email']); 
+		{
+			if($pass==$data['password']){
+				$n=$n+1;
+				$_SESSION["uname"]=$data['name'];
+				$_SESSION["email"]=$data['email'];
+				$_SESSION["phone"]=$data['phone'];
+				$_SESSION["regn"]=$data['regn'];
+				$_SESSION["branch"]=$data['branch'];
+			}
+		}
+	}
+}
+if($n!=0){
+	header('location:subjectable.php');
+}
+else{
+header('location:notreg.html');	
+}
+?>

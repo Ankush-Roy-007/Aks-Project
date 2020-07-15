@@ -1,0 +1,64 @@
+<html>
+    <head>
+<title>Register</title><script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <body style="margin:5px">
+        
+        <div style="float: right;background-image: linear-gradient(to bottom left, #ff8533,  #59979C);width: 100%;height: 210px;padding: 5px;margin: 0px">
+            <img src="Capture.PNG" style="position: relative;left: 10px;position: relative;top: 10px">
+            <h1 style="float: right;font-size: 40px;position:relative;top: 2px;color:black">JAYPEE UNIVERSITY OF INFORMATION TECHNOLOGY<p style="text-align: right; position: relative;top: 1px;font-size: 15px">Established under H.P. Legislative Assembly Act No. 14 of 2002<br> and Approved by UGC under section 2(f)</p></h1>
+        </div>
+        <div style="background-image: url(36713566005_e0beb2268e_b.jpg);float: right;height: 100%;width:100%;padding: 5px;margin: 0px">
+            <h1 style="text-align: center;font-size: 65px"><u>Registration Form</u></h1>  
+        <div style="width:49%;position: relative;left: 25%;background-image: linear-gradient(to bottom left,#EF7E7E,#C5B3B3)">
+        
+        <form action="database1.php" onsubmit="return val()" method="post">
+        <fieldset style="height:40%">
+            <legend style="font-size: 55px">Student's Detail</legend>
+            <strong style="font-size: 20px">First Name:-</strong>&nbsp;<input type="text" name="firstname"  id="firstname" placeholder="First Name.."  style="height:25px" required autocomplete="off">&nbsp; &nbsp;  &nbsp; &nbsp;
+            <strong style="font-size: 20px">Last Name :-</strong>&nbsp; <input type="text" name="lastname" id="lastname" style="height:25px" placeholder="Last Name.." required autocomplete="off"><br> 
+            
+            <strong style="font-size: 17px" >Year:-</strong> 
+                                    &nbsp; &nbsp; <input type="radio" name="year" value="FE" required>First Year
+                                    &nbsp; &nbsp; <input type="radio" name="year" value="SE">Second Year
+                                     &nbsp; &nbsp;<input type="radio" name="year" value="TE">Third Year
+                                     &nbsp; &nbsp;<input type="radio" name="year" value="BE">Fourth Year<br>
+            <strong style="font-size: 17px">Gender:-</strong> &nbsp; &nbsp;<input type="radio" name="Feedback" value="Male" required>Male
+                                        <input type="radio" name="Feedback" value="Female">Female<br>
+            
+            
+            <strong style="font-size: 17px">Branch:-</strong> &nbsp; &nbsp;
+            <select name="branch" style="height:25px">
+            <option value="none" selected>None</option>
+            <option value="CS">Computer Science</option>
+            <option value="etc">Electronics</option>
+            <option value="ee">Electrical</option>
+            <option value="it">Information Technology</option>
+            </select><br>
+            
+            <strong style="font-size: 17px;position: relative;top: -25px;left: 270px">Registration No. :-</strong><input type="tel" name="regna" id="regna" style="height:25px;position:relative;left:280px;top: -25px" placeholder=" Registration No." autocomplete="off" required><br><br>
+            
+            
+            <strong style="font-size: 17px;position: relative;top: -35px">E-mail :-</strong><input type="email" name="email" id="email" style="height:25px;position: relative;top: -35px;left: 5px" placeholder=" E-mail" autocomplete="off" required><br><br>
+                    
+            <strong style="font-size: 17px;position: relative;left:270px;top: -80px">Phone Number :-</strong><input type="tel" name="phone" id="phone" style="height:25px;position: relative;left: 280px;top: -80px" placeholder=" Phone Number" autocomplete="off" required><br><br>
+            
+            <strong style="font-size: 17px;position: relative;top: -87px">Pasword :-</strong><input type="password" name="password" id="password" style="height:25px;position: relative;left: 5px; top: -87px" placeholder=" Password" autocomplete="off" required><br><br>
+            
+            <strong style="font-size: 17px;position: relative;left: 270px;top: -130px">Confirm Password :-</strong><input type="password" name="Cpassword" id="Cpassword" style="height:25px;position: relative;left: 275px;top: -130px" placeholder="Confirm Password" autocomplete="off"><br><br>
+        
+                        
+            <input type="submit" value="Submit" id="submit" style="border-radius: 10px;background-color: #ffb399;float: left;position: relative;top: -130px">
+            <strong><p id="demo" style="font-size: 25px; color: red;float: left;position: relative;left: 28%;top: -155px" ></p></strong>
+            <input type="reset" style="border-radius: 10px;background-color:  #ffd480;float: right;position: relative;top: -130px">
+        
+        </fieldset>  
+        </form>
+        </div>
+            
+        <a href="index.html" style="position: relative;left: 45%;color: blue">Click to go Home</a>
+        
+        </div>
+
+    </body>
+</html>
